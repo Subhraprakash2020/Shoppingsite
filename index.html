@@ -1,140 +1,574 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            new flipkart
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <div class="head">
-            <table border="0" width="100%" co>
-                <tr>
-                    <th align="right"><img class="img1" src="logo3.png"></th>
-                    <th>
-                    <a href="srarch.html" class="btn1">Search for product brand & more<i class="fa fa-search" aria-hidden="true"></i></a>
-                    </th>
-                    
-                    <th ><i class="fa fa-sign-in" aria-hidden="true"></i>Login&sign</th>
-                    <th>more<i class="fa fa-chevron-down" aria-hidden="true"></i></th>
-                    <th><i class="fa fa-cart-plus" aria-hidden="true"></i>cart</th>
-                </tr>
-                </table>
+
+<head>
+  <title>flipkart3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="head">
+    <table border="0" width="100%">
+      <tr>
+        <th align="right"><img class="img1" src="logo3.png"></th>
+        <th>
+          <!-- ><a href="srarch.html" class="btn1">Search for product brand & more
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                      </a> -->
+          <input class="btn1" type="text" placeholder="Search for product brand & more">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </th>
+
+
+        <th><i class="fa fa-sign-in" aria-hidden="true"></i>Login&sign</th>
+        <th>more<i class="fa fa-chevron-down" aria-hidden="true"></i></th>
+        <th><i class="fa fa-cart-plus" aria-hidden="true"></i>cart</th>
+      </tr>
+    </table>
+  </div>
+  <div class="navbar">
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Electonics
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">Mobile</a>
+        <a href="#">laptop</a>
+        <a href="#">Camera</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction2()">TV & Appliances
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown2">
+        <a href="#">Television</a>
+        <a href="#">Washing machine</a>
+        <a href="#">A.c</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction3()">Men
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown3">
+        <a href="#">Top wear</a>
+        <a href="#">Winter wear</a>
+        <a href="#">watches</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction4()">Women
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown4">
+        <a href="#">lingere</a>
+        <a href="#">sandle</a>
+        <a href="#">Foot wear</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction5()">Sports,books & more
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown5">
+        <a href="#">Books</a>
+        <a href="#">music</a>
+        <a href="#">Gaming</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="image" src="logo4.jpg" alt="img1">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="image" src="logo6.jpg" alt="img2">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="image" src="logo7.jpg" alt="img3">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <div class="row1">
+    <h2>TV & Appliances</h2>
+    <hr>
+    <div class="card">
+      <div class="image-contenor">
+        <img class="img-100" src="img5.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Samsung Android TV</h3>
+          <h4>Up to 60% off</h4>
+          </th>
         </div>
-        <div class="menu-bar">
-            <table border="0" width="100%">
-            <ul>
-                <li><a href="#">Electonics</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu1">
-                        <ul>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">laptop</a></li>
-                            <li><a href="#">camera</a></li>
-                            <li><a href="#">sparkers</a></li>
-                        </ul>
-
-
-
-                    </div>
-                  
-                
-                </li>
-                <li><a href ="#">TV & Appliances</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu2">
-                            <ul>
-                                <li><a href="#">Television</a></li>
-                                <li><a href="#">Washing machine</a></li>
-                                <li><a href="#">Air condition</a></li>
-                                <li><a href="#">Top brands</a></li>
-                            </ul>
-    
-    
-    
-                        </div>
-                </li>
-                <li><a href ="#">Men</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu3">
-                            <ul>
-                                <li><a href="#">Foot wear</a></li>
-                                <li><a href="#">Men'wera</a></li>
-                                <li><a href="#">smart watches</a></li>
-                                <li><a href="#">inner wears</a></li>
-                            </ul>
-    
-    
-    
-                        </div>
-                </li>
-                <li><a href ="#">Women</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu4">
-                            <ul>
-                                <li><a href="#">westen wear</a></li>
-                                <li><a href="#"> sandles</a></li>
-                                <li><a href="#">Slippers & Flip- Flop's</a></li>
-                                <li><a href="#">Jewellery</a></li>
-                            </ul>
-    
-    
-    
-                        </div>
-                </li>
-                <li><a href ="#">Baby & Kids</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu5">
-                            <ul>
-                                <li><a href="#">Kids Clothing</a></li>
-                                <li><a href="#">Character Shoes</a></li>
-                                <li><a href="#">Baby Care</a></li>
-                                <li><a href="#">Kids' Winter Wear</a></li>
-                            </ul>
-    
-    
-    
-                        </div>
-                </li>
-                <li><a href ="#">Home & Forniture</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu6">
-                            <ul>
-                                <li><a href="#">Kitchen, Cookware & Serveware</a></li>
-                                <li><a href="#">Smart Home Automation</a></li>
-                                <li><a href="#">Home Lighting</a></li>
-                                <li><a href="#">Festive Decor & Gifts</a></li>
-                            </ul>
-    
-    
-    
-                        </div>
-                </li>
-                <li><a href ="#">Fights</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu7">
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-    
-    
-    
-                        </div>
-                </li>
-                <li><a href ="#">Sports,Books & more</a><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="sub-menu8">
-                            <ul>
-                                <li><a href="#">Books</a></li>
-                                <li><a href="#">Stationery</a></li>
-                                <li><a href="#">Gaming</a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-    
-    
-    
-                        </div>
-                </li>
-            </ul>
-            </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img5.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Samsung Android TV</h3>
+          <h4>Up to 60% off</h4>
+          </th>
         </div>
-        
-    
-    </body>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img5.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Samsung Android TV</h3>
+          <h4>Up to 60% off</h4>
+          </th>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img5.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Samsung Android TV</h3>
+          <h4>Up to 60% off</h4>
+          </th>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row2">
+    <h2>Men's</h2>
+    <hr>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img4.jpeg" alt="img1">
+        <div class="img-description">
+          <h2>Color-Yellow</h2>
+          <h3>$200</h3>
+          <h4>Up to 40% off</h4>
+          </th>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image-contenor">
+      <img src="img4.jpeg" alt="img1">
+      <div class="img-description">
+        <h2>Color-Yellow</h2>
+        <h3>$200</h3>
+        <h4>Up to 40% off</h4>
+        </th>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image-contenor">
+      <img src="img4.jpeg" alt="img1">
+      <div class="img-description">
+        <h2>Color-Yellow</h2>
+        <h3>$200</h3>
+        <h4>Up to 40% off</h4>
+        </th>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image-contenor">
+      <img src="img4.jpeg" alt="img1">
+      <div class="img-description">
+        <h2>Color-Yellow</h2>
+        <h3>$200</h3>
+        <h4>Up to 40% off</h4>
+        </th>
+      </div>
+    </div>
+  </div>
+  <div class="row3">
+    <h2>Irrestable Deos &perfumes </h2>
+    <hr>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img7.jpeg" alt="img2">
+        <div class="img-description">
+          <h2>fragrance best seller</h2>
+          <h3>Extra 5% off</h3>
+          <h4>Denver fogg</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image-contenor">
+      <img src="img7.jpeg" alt="img2">
+      <div class="img-description">
+        <h2>fragrance best seller</h2>
+        <h3>Extra 5% off</h3>
+        <h4>Denver fogg</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image-contenor">
+      <img src="img7.jpeg" alt="img2">
+      <div class="img-description">
+        <h2>fragrance best seller</h2>
+        <h3>Extra 5% off</h3>
+        <h4>Denver fogg</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image-contenor">
+      <img src="img7.jpeg" alt="img2">
+      <div class="img-description">
+        <h2>fragrance best seller</h2>
+        <h3>Extra 5% off</h3>
+        <h4>Denver fogg</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row4">
+    <h2> Deals of the day</h2>
+    <hr>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img3.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Vivi NEX(Black 128GB</h3>
+          <h4>4000 mAh Battery</h4>
+          <p>NOW $29990</p>
+          </th>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img3.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Vivi NEX(Black 128GB</h3>
+          <h4>4000 mAh Battery</h4>
+          <p>NOW $29990</p>
+          </th>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img3.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Vivi NEX(Black 128GB</h3>
+          <h4>4000 mAh Battery</h4>
+          <p>NOW $29990</p>
+          </th>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-contenor">
+        <img src="img3.jpeg" alt="img1">
+        <div class="img-description">
+          <h3>Vivi NEX(Black 128GB</h3>
+          <h4>4000 mAh Battery</h4>
+          <p>NOW $29990</p>
+          </th>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    function myFunction2() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+    function myFunction3() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+
+      document.getElementById("myDropdown3").classList.toggle("show");
+    }
+
+
+    function myFunction4() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+
+      var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show')) {
+        myDropdown3.classList.remove('show');
+      }
+
+      var myDropdown5 = document.getElementById("myDropdown5");
+      if (myDropdown5.classList.contains('show')) {
+        myDropdown5.classList.remove('show');
+      }
+      document.getElementById("myDropdown4").classList.toggle("show");
+    }
+
+
+    function myFunction5() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+
+      var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show')) {
+        myDropdown3.classList.remove('show');
+      }
+
+      var myDropdown4 = document.getElementById("myDropdown4");
+      if (myDropdown4.classList.contains('show')) {
+        myDropdown4.classList.remove('show');
+      }
+      document.getElementById("myDropdown5").classList.toggle("show");
+    }
+
+
+
+    function myFunction() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+
+      var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show')) {
+        myDropdown3.classList.remove('show');
+      }
+
+      var myDropdown4 = document.getElementById("myDropdown4");
+      if (myDropdown4.classList.contains('show')) {
+        myDropdown4.classList.remove('show');
+      }
+
+      var myDropdown5 = document.getElementById("myDropdown5");
+      if (myDropdown5.classList.contains('show')) {
+        myDropdown5.classList.remove('show');
+      }
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function myFunction2() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show')) {
+        myDropdown3.classList.remove('show');
+      }
+
+      var myDropdown4 = document.getElementById("myDropdown4");
+      if (myDropdown4.classList.contains('show')) {
+        myDropdown4.classList.remove('show');
+      }
+
+      var myDropdown5 = document.getElementById("myDropdown5");
+      if (myDropdown5.classList.contains('show')) {
+        myDropdown5.classList.remove('show');
+      }
+
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+
+    function myFunction3() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+
+      var myDropdown4 = document.getElementById("myDropdown4");
+      if (myDropdown4.classList.contains('show')) {
+        myDropdown4.classList.remove('show');
+      }
+
+      var myDropdown5 = document.getElementById("myDropdown5");
+      if (myDropdown5.classList.contains('show')) {
+        myDropdown5.classList.remove('show');
+      }
+
+      document.getElementById("myDropdown3").classList.toggle("show");
+    }
+
+
+    function myFunction4() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+
+      var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show')) {
+        myDropdown3.classList.remove('show');
+      }
+
+      var myDropdown5 = document.getElementById("myDropdown5");
+      if (myDropdown5.classList.contains('show')) {
+        myDropdown5.classList.remove('show');
+      }
+
+      document.getElementById("myDropdown4").classList.toggle("show");
+    }
+
+
+    function myFunction5() {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+
+      var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show')) {
+        myDropdown3.classList.remove('show');
+      }
+
+      var myDropdown4 = document.getElementById("myDropdown4");
+      if (myDropdown4.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      document.getElementById("myDropdown5").classList.toggle("show");
+    }
+
+
+
+
+
+    window.onclick = function (e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        var myDropdown2 = document.getElementById("myDropdown2");
+
+        var myDropdown3 = document.getElementById("myDropdown3");
+
+
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+
+        if (myDropdown2.classList.contains('show')) {
+          myDropdown2.classList.remove('show');
+        }
+
+        if (myDropdown3.classList.contains('show')) {
+          myDropdown3.classList.remove('show');
+        }
+
+        if (myDropdown4.classList.contains('show')) {
+          myDropdown4.classList.remove('show');
+        }
+
+        if (myDropdown5.classList.contains('show')) {
+          myDropdown5.classList.remove('show');
+        }
+      }
+    }
+  </script>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
 </html>
